@@ -1,8 +1,8 @@
-import TweetService from "../services/tweet-service";
+import TweetService from "../services/tweet-service.js";
 
 const tweetService = new TweetService();
 
-export default createTweet = async ( req,res ) => {
+export const createTweet = async ( req,res ) => {
     try{
         const data = req.body;
         const response = await tweetService.create(data);

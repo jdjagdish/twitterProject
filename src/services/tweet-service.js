@@ -1,5 +1,5 @@
-import { TweetRepository } from "../repository/tweet-repository"
-import { HashtagRepository } from "../repository/hashtag-repository"
+import  TweetRepository  from "../repository/tweet-repository.js"
+import  HashtagRepository  from "../repository/hashtag-repository.js"
 
 
 class TweetService {
@@ -45,8 +45,4 @@ class TweetService {
 
 
 export default TweetService;
-    //     content: "This is my first tweet #firsttweet",
-    //     likes: 25,
-    //     noOfRetweets: 5,
-    //     comment: "This is my firts comment"
-    // }
+   

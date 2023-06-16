@@ -1,7 +1,8 @@
 import express from "express"
 import {connect} from "./config/database.js";
 import router from "./routes/index.js";
-import TweetRepository from "./repository/tweet-repository.js";
+import bodyParser from "body-parser";
+
 const app = express();
 
 
