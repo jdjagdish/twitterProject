@@ -7,6 +7,16 @@
         -- likes 
         -- comment tweets 
         -- hashtags(#)
+        user
+
+// like
+            like on tweet , like on comment tweet 
+         user
+
+// Comment
+        content 
+        like
+        user
 
 // (User) 
         
@@ -20,6 +30,8 @@
     -- word
     -- List of tweets 
     -- ranking
+
+
 
 // other users should be able to like a tweet
 

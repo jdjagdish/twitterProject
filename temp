@@ -1,2 +1,2 @@
-atlascloud mongoDB ---> compas import --> cluster --->database --->schema ---> model --->collection --> document
+atlascloud mongoDB ---> compass import --> cluster --->database --->schema ---> model --->collection --> document
 

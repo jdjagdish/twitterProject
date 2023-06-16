@@ -3,7 +3,8 @@ import mongoose from "mongoose";
 
 const tweetSchema = new mongoose.Schema({
     content: {
-        type: String
+        type: String,
+        required:true
     },
     likes: {
         type: Number

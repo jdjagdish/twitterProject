@@ -1,9 +1,14 @@
 import express from "express"
 import {connect} from "./config/database.js";
-import Tweet from "./models/tweet.js";
+import router from "./routes/index.js";
+import TweetRepository from "./repository/tweet-repository.js";
 const app = express();
 
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
+
+app.use("/",router)
 
 app.listen(3000, async ()=> {
     console.log("server Started at 3000");
@@ -13,16 +18,20 @@ app.listen(3000, async ()=> {
     console.log("Mongo DB connected");
 
 
-    Tweet.create({
-        content: "This is my first tweet",
-        likes: 25,
-        noOfRetweets: 5,
-        comment: "This is my firts comment"
-    })
+    // Tweet.create({
+    //     content: "This is my first tweet",
+    //     likes: 25,
+    //     noOfRetweets: 5,
+    //     comment: "This is my firts comment"
+    // })
+
+    // Hashtag.create({
+    //     text: "travel",
+    //     tweets: ['648583a1e1bdcba73b76c926']
+    // })
     
 
     
-
     
 
 })
