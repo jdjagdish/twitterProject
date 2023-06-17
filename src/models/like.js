@@ -16,6 +16,6 @@ const likeSchema = new mongoose.Schema({
     }
 })
 
-const Like =  mongoose.model('like',tweetSchema);
+const Like =  mongoose.model('like',likeSchema);
 
 export default Like;

@@ -9,7 +9,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
-app.use("/",router)
+app.use("/api",router)
 
 app.listen(3000, async ()=> {
     console.log("server Started at 3000");
