@@ -1,1 +1,21 @@
   i am having an amazing day at goa beach #travel #beach 
+
+
+  USer -
+  email
+  password
+  name
+
+
+  sign -- email/password
+
+  getUserByemail 
+  comapre the password true?  sign in
+
+  --?
+
+  issue that user a JWT token
+
+  /signIN
+  /createTweet - content,image,TOKEN  --create service
+  //

@@ -19,6 +19,7 @@ class TweetService {
         
         //storing the hashtags ---
         let alreadyPresentTags = await this.hashtagRepository.findByName(tags)
+        console.log(alreadyPresentTags)
         let textOfPresentTags = alreadyPresentTags.map(tags => tags.text)
         let newTags = tags.filter(tag=> !textOfPresentTags.includes(tag) )
         newTags = newTags.map( tag => {
